@@ -22,8 +22,8 @@ const Post = () => {
       img: sports,
       title: "The Rise of Data-Driven Coaching in Modern Sports",
       field: "Sports",
-      path: "/posts/miraculous",
-      published: "02 Nov 2024",
+      path: "/posts/Coaching",
+      published: "11 Oct 2021",
     },
     {
       img: finance,

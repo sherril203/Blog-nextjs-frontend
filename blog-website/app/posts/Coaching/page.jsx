@@ -1,5 +1,5 @@
 import React from 'react'
-import { minecraft } from '../../../assets/assets'
+import { sports } from '../../../assets/assets'
 import Image from "next/image";
 export const metadata = {
     title: "The Everlasting Appeal of Minecraft",
@@ -8,16 +8,18 @@ export const metadata = {
 const page = () => {
   const post = [
     {
-      img: minecraft,
-      title: "The Everlasting Appeal of Minecraft",
-      field: "Gaming",
-      description: [
-       "Minecraft has captivated millions of players around the world with its unique sandbox gameplay and endless creativity.",
-      " From building intricate structures to exploring vast procedurally-generated worlds, Minecraft offers a truly immersive experience.",
-      " The community's creativity, modding capabilities, and regular updates keep the game fresh and exciting even after many years.",
-      " It introduced special features like mods,skins,shaders and servers to join together with friends. Minecraft has storymode like movie to see and enjoy the game"
+      img: sports,
+      title: "The Rise of Data-Driven Coaching in Modern Sports",
+      field: "Sports",
+      description: ["In recent years, the world of sports has undergone a digital transformation", 
+        " with data-driven coaching emerging as a game-changer. By leveraging advanced analytics", 
+        " wearable technology, and performance metrics, coaches can now make more informed decisions", 
+        " about training, strategy, and player development. From monitoring athlete health and preventing injuries to",
+        " optimizing in-game tactics, data-driven approaches are reshaping how teams compete at every level.",
+        " This shift not only enhances performance but also fosters a deeper understanding of the game", 
+        " allowing athletes and coaches to push the boundaries of human potential."
       ],
-      published:"05 Dec 2023"
+      published:"11 Oct 2021"
     },
   ]
 

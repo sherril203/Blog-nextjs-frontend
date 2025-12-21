@@ -1,4 +1,4 @@
-import minecraft from '../assets/minecraft.webp'
+import minecraft from '../assets/minecraft.jpg'
 import finance from '../assets/finance.webp'
 import health from '../assets/health.jpeg'
 import sports from '../assets/sports.jpg'

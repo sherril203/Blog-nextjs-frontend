@@ -1,8 +1,10 @@
-"use client"
 import React from 'react'
 import { miraculous } from '../../../assets/assets'
 import Image from "next/image";
-
+export const metadata = {
+    title: "The New Adventures of Miraculous Ladybug",
+    description: "Miraculous ladybug is the series going with new evolution"
+}
 const page = () => {
   const post = [
     {

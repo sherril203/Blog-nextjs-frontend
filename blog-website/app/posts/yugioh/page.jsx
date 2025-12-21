@@ -1,8 +1,10 @@
-"use client"
 import React from 'react'
 import { yugioh } from '../../../assets/assets'
 import Image from "next/image";
-
+export const metadata = {
+      title: "Yugioh anime has introduced various series",
+    description: "Yugioh is the amine introduced games"
+}
 const page = () => {
   const post = [
     {
@@ -12,8 +14,9 @@ const page = () => {
       description: [
        "Yugioh anime has introduced and released various series based on various dimensions and summoning ",
        " like fusion,synchro,Xyz,Pendulum,Link,Ritual and rush Duels. Each series have protangist and villians and",
-       " have their ace monsters. Go rush and Sevens are differ from other series. Yugioh introduced some games",
-       " like yugioh duel links, yugioh cross duel"
+       " have their ace monsters. Go rush and Sevens are differ from other series because it introduce Maximum summon.",
+       " In Rush duels, protangist Yudias velgear and villian Otes summon Ritual summon. Yugioh introduced some games ",
+       " like yugioh duel links, yugioh cross duel."
       ],
       published:"10 Dec 2022"
     },
