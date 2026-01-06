@@ -55,9 +55,8 @@ const Post = () => {
     },
   ];
 
-  const handleSearch = () => {
+   const handleSearch = () => {
     const text = inputRef.current.value.toLowerCase();
-
     setSearchText(text);
 
     const results = post.filter(
@@ -74,28 +73,31 @@ const Post = () => {
   };
 
   const postsToShow = searchText ? filteredPosts : post;
-
   return (
     <div>
-      <h2 className="text-2xl text-center font-bold p-3">Our Posts</h2>
+     {/* Header + Search */}
+<div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between px-4 md:px-8 mt-6">
+  
+  <h2 className="text-3xl font-semibold">
+    Our Posts
+  </h2>
 
-      {/* Search Bar */}
-      <div className="flex gap-2 p-2 mx-390">
-        <input
-          type="text"
-          ref={inputRef}
-          onKeyDown={handleKeyDown}
-          placeholder="Search posts..."
-          className="p-2 border border-gray-300 rounded"
-        />
+  {/* Search Bar */}
+  <div className="flex w-full sm:w-auto gap-2">
+    <input
+    ref={inputRef}
+            onKeyDown={handleKeyDown}
+      type="text"
+      placeholder="Search posts..."
+      className="w-full sm:w-64 px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+    />
 
-        <button
-          onClick={handleSearch}
-          className="bg-blue-600 text-white text-xl px-4 py-2 rounded"
-        >
-          Search
-        </button>
-      </div>
+    <button   onClick={handleSearch} className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition">
+      Search
+    </button>
+  </div>
+</div>
+
 
       {/* Posts Grid */}
       <div className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 p-2 gap-4">
