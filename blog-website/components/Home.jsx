@@ -77,7 +77,7 @@ const Home = () => {
             <h2 className='p-2 text-3xl font-bold'>Welcome to blog website</h2>
             <h2 className='p-2 text-2xl '>here you can see various field</h2>
            {/* Search Bar */}
-      <div className="flex gap-2 p-2 mx-150">
+      <div className="flex gap-2 p-2 mx-50">
         <input
           type="text"
           ref={inputRef}
