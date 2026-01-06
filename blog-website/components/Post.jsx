@@ -80,7 +80,7 @@ const Post = () => {
       <h2 className="text-2xl text-center font-bold p-3">Our Posts</h2>
 
       {/* Search Bar */}
-      <div className="flex gap-2 p-2 mx-200">
+      <div className="flex gap-2 p-2 mx-390">
         <input
           type="text"
           ref={inputRef}
