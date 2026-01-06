@@ -76,13 +76,14 @@ const Home = () => {
         <div>
             <h2 className='p-2 text-3xl font-bold'>Welcome to blog website</h2>
             <h2 className='p-2 text-2xl '>here you can see various field</h2>
-           <div className="flex gap-2 p-2 mx-360">
+           {/* Search Bar */}
+      <div className="flex gap-2 p-2 mx-390">
         <input
           type="text"
           ref={inputRef}
           onKeyDown={handleKeyDown}
           placeholder="Search posts..."
-          className="p-2 border border-gray-300 rounded "
+          className="p-2 border border-gray-300 rounded"
         />
 
         <button
