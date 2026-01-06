@@ -55,7 +55,7 @@ const Post = () => {
     },
   ];
 
-   const handleSearch = () => {
+  const handleSearch = () => {
     const text = inputRef.current.value.toLowerCase();
     setSearchText(text);
 
@@ -75,28 +75,28 @@ const Post = () => {
   const postsToShow = searchText ? filteredPosts : post;
   return (
     <div>
-     {/* Header + Search */}
-<div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between px-4 md:px-8 mt-6">
-  
-  <h2 className="text-3xl font-semibold">
-    Our Posts
-  </h2>
+      {/* Header + Search */}
+      <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between px-4 md:px-8 mt-6">
 
-  {/* Search Bar */}
-  <div className="flex w-full sm:w-auto gap-2">
-    <input
-    ref={inputRef}
+        <h2 className="text-3xl font-semibold">
+          Our Posts
+        </h2>
+
+        {/* Search Bar */}
+        <div className="flex w-full sm:w-auto gap-2">
+          <input
+            ref={inputRef}
             onKeyDown={handleKeyDown}
-      type="text"
-      placeholder="Search posts..."
-      className="w-full sm:w-64 px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-    />
+            type="text"
+            placeholder="Search posts..."
+            className="w-full sm:w-64 px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
 
-    <button   onClick={handleSearch} className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition">
-      Search
-    </button>
-  </div>
-</div>
+          <button onClick={handleSearch} className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition">
+            Search
+          </button>
+        </div>
+      </div>
 
 
       {/* Posts Grid */}
